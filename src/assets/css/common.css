@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import url(fonts.css);
+
+/*-------------------------------------------------------------------
+    파일정의: Common css
+    순서:    Header > table > list > form ... > Footer 
+-------------------------------------------------------------------*/
+
+.container {max-width: 1240px; margin: 0 auto;width: 95%;}
+.sub_container {max-width: 1025px; margin: 0 auto;width: 95%;}
+.line_clamp_2 {overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+
+/* header start */
+.head {position: fixed; height: 129px; border-bottom: 1px solid #cccccc;width: 100%;background: var(--tago-bg-light);z-index: 9999;}
+.head .auth {display: flex; gap: 16px; justify-content: end; align-items: center; color: var(--tago-color-dark); padding: 21px 0;}
+.head .auth span {display: block; width: 1px; height: 12px; background: #898989;}
+.header_inn {display: flex; justify-content: space-between; align-items: center;}
+.logo {width: 147px; height: auto;}
+.gnb {display: flex; gap: 61px;padding-top: 8px;}
+.gnb li a {font-size: 20px;position: relative;}
+.gnb li a::before {content: '';position: absolute; width: 0;left:0; height: 2px;background: var(--tago-button-bg);bottom: -2px;transition: all 0.2s ease-in-out;}
+.gnb li a:hover::before{width: 100%;}
+.support {display: flex; gap: 27px;}
+.support a {font-size: 20px;color: var(--tago-color-light); background-color: var(--tago-button-bg);width: 130px; height: 45px;display: flex;align-items: center;justify-content: center;border-radius: 5px;}
+.support .hamburger {position: relative;width: 26px;height: auto;border: none;display: block;cursor: pointer;}
+.hamburger span {position: absolute;width: 26px;height: 3px;background-color: var(--tago-bg-dark);top: 22px;left: 0;transition: 0.2s;}
+.hamburger span:nth-child(1) {top: 15px;}
+.hamburger span:nth-child(4) {top: 29px;}
+.hamburger.active span:nth-child(1),
+.hamburger.active span:nth-child(4){opacity: 0;}
+.hamburger.active span:nth-child(2){transform: rotate(45deg);}
+.hamburger.active span:nth-child(3) {transform: rotate(-45deg);}
+/* header end */
+
+/* footer start */
+.footer {margin-top: 118px;background: var(--tago-bg-dark);padding: 67px 0;}
+.footer .foot01 {display: flex; justify-content: space-between;align-items: center;border-bottom: 1px solid #757271;padding-bottom: 27px;gap: 10px;}
+.footer .foot01 .footer_gnb {display: flex; align-items: center; gap: 42px;}
+.footer .foot01 .footer_gnb a{color: var(--tago-color-light);font-size: 15px;}
+.footer .foot01 > div {display: flex; align-items: center; gap: 6px;}
+.footer .foot01 > div .f01_select{position: relative;background: url(../../assets/imgs/icons/ico_right_arr_gray.png) no-repeat; background-position: right 12px center;}
+.footer .foot01 > div select{ -moz-appearance:none;-webkit-appearance:none;appearance:none;background: none;width: 200px;height: 40px;cursor: pointer;color: #757271;border: 1px solid #757271;border-radius: 5px;}
+.footer .foot02 {display: flex;justify-content: space-between;padding: 34px 0 64px;}
+.footer .foot02 h6{font-size: 16px;color: var(--tago-color-light);margin-bottom: 26px;}
+.footer .foot02 .f01_item > div{display: flex; gap: 84px;line-height: 26px;}
+.footer .foot02 .f01_item a{font-size: 16px;color: var(--tago-color-light);}
+.footer .foot02 .f02_item > p {font-size: 16px;color: var(--tago-color-light);font-weight: 300;margin-bottom: 20px;line-height: 25px;}
+.footer .foot02 .f02_item > a {font-size: 16px;color: var(--tago-color-light);font-weight: 300;width: 115px;height: 36px;border: 1px solid #fff;display: flex;justify-content: center;align-items: center;border-radius: 5px;}
+.footer .foot02 .f03_item .sns-row {display: flex;gap: 20px;line-height: 26px;  }
+.footer .foot02 .f03_item a {color: #757271;font-weight: 300;font-size: 16px;}
+.footer .foot02 .f03_item .app_link {display: flex;gap: 20px;margin-top: 18px;}
+.footer .foot02 .f03_item .app_link a{border:1px solid #757271;width: 115px;height: 37px;display: flex;justify-content: center;align-items: center;border-radius: 5px;}
+.footer .footer_inn > span {width: 100%;height: 1px;background: #757271;display: block;}
+.footer .foot03 {display: flex;gap: 285px;margin-top: 35px;}
+.footer .foot03 > div{color: #e3e3e3; font-size: 15px;line-height: 26px;}
+.footer .foot03 > a{border: 1px solid #757271;color: #757271;width: 150px; height: 30px;display: flex;justify-content: center;align-items: center;border-radius: 5px;}
+/* footer end */

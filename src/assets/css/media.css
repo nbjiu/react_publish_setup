@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import url(fonts.css);
+
+/*-------------------------------------------------------------------
+    파일정의: Responsive css on all pages
+    순서:    Header(menu)> Sub Page > Main top(banner) > Footer > Aside
+-------------------------------------------------------------------*/
+
+@media screen and (max-width: 1300.98px) {
+    .conts0 .text h6 {font-size: 16px;}
+    .conts0 .img {width: 100px;height: auto;}
+    .conts0 .text p {margin: 3px 0 5px;}
+    .conts0 .text a {font-size: 14px;}
+    .conts0 .text a::after {height: 11px;}
+
+    /* sub page style */
+}
+@media screen and (max-width: 1000.98px) {
+    .gnb {gap: 30px;}
+    .gnb li a {font-size: 16px;}
+    .support a {font-size: 16px;width: 90px;}
+    .conts0 .inn {height: auto;padding: 30px 0;}
+    .conts0 .item {flex-direction: column;}
+
+    /* sub page style */
+    .subBanner {height: 450px;}
+    .sub_banner_text h1 {font-size: 22px;}
+    .sub_banner_text h2 {font-size: 35px;line-height: 48px;}
+
+    /* footer */
+    .footer .foot01 {flex-direction: column;gap: 25px;}
+}
+@media screen and (max-width: 767.98px) {
+    .gnb {display: none;}
+    .conts0 .inn {flex-wrap: wrap;row-gap: 30px;}
+    .conts0 .item {width: 35%;}
+    .conts1 {padding: 0px 0 80px;}
+    .conts1 .inn { flex-wrap: wrap;justify-content: center;margin-top: 30px;}
+
+    .conts3 .inn p {font-size: 18px;}
+    .conts3 .inn a {width: 100%;height: 300px;}
+    .conts3 > p {font-size: 18px;margin:10px 0 30px;}
+
+    .conts4 {padding-top: 80px;}
+    .conts4 .inn{flex-wrap: wrap;}
+    .conts4 .inn .item {width: 48%;}
+
+    .conts5 {flex-direction: column;gap: 15px;padding-top: 80px;}
+
+    /* sub page style */
+    .sub_banner_text h1 {font-size: 18px;}
+    .sub_banner_text h2 {font-size: 30px;line-height: 40px;}
+
+    /* footer */
+    .footer .foot01 .footer_gnb {gap: 15px;}
+    .footer .foot02 {flex-wrap: wrap;gap: 15px;}
+    .footer .foot03 {gap: 20px;flex-direction: column;}
+    
+}
+@media screen and (max-width: 575.98px) {
+    .banner {height: 450px;}
+    .conts .article_tit {font-size: 35px;line-height: 40px;}
+    .conts1 .item { width: 45%;}
+    .conts1 .item .img {height: 150px;}
+    .conts1 article h6 {font-size: 16px;}
+    .conts1 article p {font-size: 14px;margin: 10px 0 5px;}
+    
+    .conts2 {padding: 80px 0;}
+    .conts2 p {font-size: 20px;line-height: 35px;}
+    .conts2 a {font-size: 18px;width: 150px; height: 40px;margin-top: 30px;}
+
+    .conts3 {padding-top: 50px;}
+    .conts3 .inn {flex-direction: column;}
+    .conts3 .inn a {height: 200px;}
+    .conts3 .inn > a:nth-child(3) {background-position: 28% 46%;}
+
+    .conts4 {padding-top: 50px;}
+    .conts4 .inn {margin-top: 30px;}
+    .conts4 .img {height: 200px;}
+    .conts4 .text {gap: 15px;padding: 15px 0;}
+    .conts4 .text > p {font-size: 20px;}
+    
+    .conts5 {padding-top: 30px;}
+    .conts5 .item {padding: 10px 25px;}
+    .conts5 .item > p {font-size: 18px;}
+
+    /* sub page style */
+
+
+    /* footer */
+    .footer .foot01 .footer_gnb {flex-wrap: wrap;}
+    .footer .foot01 > div select {width: 150px;}
+
+}
+@media screen and (max-width: 483px) {
+
+    /* sub page style */
+    .sub_banner_text { top: 16%;}
+
+    /* footer */
+    .footer .foot02 .f01_item > div {gap: 30px;}
+}
